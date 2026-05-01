@@ -1,0 +1,21 @@
+{
+  "name": "odoo-uae-landing",
+  "version": "1.0.0",
+  "description": "Mobile-first Odoo-style landing page with lead admin panel",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "odoo",
+    "landing-page",
+    "lead-capture",
+    "uae"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "nodemailer": "^6.10.1"
+  }
+}

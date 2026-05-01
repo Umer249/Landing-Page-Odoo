@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lead Admin - Odoo UAE Landing</title>
+    <style>
+      :root {
+        --bg: #f7f7fb;
+        --card: #fff;
+        --text: #1f2937;
+        --muted: #667085;
+        --line: #e5e7eb;
+        --primary: #875a7b;
+      }
+      body {
+        margin: 0;
+        font-family: Inter, Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+      .wrap {
+        width: min(1100px, calc(100% - 28px));
+        margin: 24px auto;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 16px;
+      }
+      h1 {
+        margin: 0 0 6px;
+      }
+      p {
+        color: var(--muted);
+      }
+      .controls {
+        display: flex;
+        gap: 8px;
+        margin: 12px 0;
+        flex-wrap: wrap;
+      }
+      input,
+      button {
+        padding: 10px 12px;
+        border: 1px solid #d0d5dd;
+        border-radius: 8px;
+        font: inherit;
+      }
+      button {
+        background: var(--primary);
+        color: #fff;
+        border-color: var(--primary);
+        cursor: pointer;
+      }
+      .table-wrap {
+        overflow: auto;
+        margin-top: 12px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 760px;
+      }
+      th,
+      td {
+        border-bottom: 1px solid var(--line);
+        text-align: left;
+        padding: 10px;
+        vertical-align: top;
+      }
+      .status {
+        margin-top: 6px;
+        min-height: 20px;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap card">
+      <h1>Lead Submissions Admin</h1>
+      <p>Enter your admin key to view and export landing page submissions.</p>
+      <div class="controls">
+        <input id="key" type="password" placeholder="Admin key" />
+        <button id="loadBtn" type="button">Load Submissions</button>
+        <button id="csvBtn" type="button">Export CSV</button>
+      </div>
+      <div class="status" id="status"></div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Name</th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>Company</th>
+              <th>Industry</th>
+              <th>Project</th>
+            </tr>
+          </thead>
+          <tbody id="rows">
+            <tr><td colspan="7">No data loaded yet.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script>
+      const rowsEl = document.getElementById("rows");
+      const statusEl = document.getElementById("status");
+      const keyEl = document.getElementById("key");
+      const loadBtn = document.getElementById("loadBtn");
+      const csvBtn = document.getElementById("csvBtn");
+      let cache = [];
+
+      function toCsv(records) {
+        const headers = ["submittedAt", "name", "phone", "email", "company", "industry", "project"];
+        const esc = (v) => `"${String(v || "").replaceAll('"', '""')}"`;
+        return [headers.join(","), ...records.map((r) => headers.map((h) => esc(r[h])).join(","))].join("\n");
+      }
+
+      function render(records) {
+        if (!records.length) {
+          rowsEl.innerHTML = '<tr><td colspan="7">No submissions found.</td></tr>';
+          return;
+        }
+
+        rowsEl.innerHTML = records
+          .map((r) => {
+            return `<tr>
+              <td>${new Date(r.submitted_at || r.submittedAt).toLocaleString()}</td>
+              <td>${r.name || ""}</td>
+              <td>${r.phone || ""}</td>
+              <td>${r.email || ""}</td>
+              <td>${r.company || ""}</td>
+              <td>${r.industry || ""}</td>
+              <td>${r.project || ""}</td>
+            </tr>`;
+          })
+          .join("");
+      }
+
+      async function loadData() {
+        const key = keyEl.value.trim();
+        if (!key) {
+          statusEl.textContent = "Please enter your admin key.";
+          return;
+        }
+
+        statusEl.textContent = "Loading submissions...";
+        try {
+          const res = await fetch(`/api/leads?key=${encodeURIComponent(key)}`);
+          if (!res.ok) throw new Error("Unauthorized or request failed.");
+          cache = await res.json();
+          render(cache);
+          statusEl.textContent = `Loaded ${cache.length} submissions.`;
+        } catch (err) {
+          statusEl.textContent = err.message;
+        }
+      }
+
+      function exportCsv() {
+        if (!cache.length) {
+          statusEl.textContent = "Load submissions first.";
+          return;
+        }
+        const blob = new Blob([toCsv(cache)], { type: "text/csv;charset=utf-8;" });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = "lead-submissions.csv";
+        link.click();
+        URL.revokeObjectURL(url);
+      }
+
+      loadBtn.addEventListener("click", loadData);
+      csvBtn.addEventListener("click", exportCsv);
+    </script>
+  </body>
+</html>
