@@ -17,11 +17,24 @@ async function submitLead(event) {
       body: JSON.stringify(payload)
     });
 
-    const data = await response.json();
-    if (!response.ok) throw new Error(data.error || "Submission failed.");
+    const raw = await response.text();
+    let data;
+    try {
+      data = JSON.parse(raw);
+    } catch {
+      data = null;
+    }
+
+    if (!response.ok) {
+      throw new Error(
+        (data && data.error) ||
+          (raw && raw.slice(0, 140)) ||
+          "Submission failed."
+      );
+    }
 
     form.reset();
-    messageEl.textContent = data.message || "Submitted successfully.";
+    messageEl.textContent = (data && data.message) || "Submitted successfully.";
     messageEl.style.color = "#166534";
   } catch (error) {
     messageEl.textContent = error.message || "Something went wrong.";

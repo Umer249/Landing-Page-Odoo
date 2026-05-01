@@ -152,8 +152,20 @@
         statusEl.textContent = "Loading submissions...";
         try {
           const res = await fetch(`/api/leads?key=${encodeURIComponent(key)}`);
-          if (!res.ok) throw new Error("Unauthorized or request failed.");
-          cache = await res.json();
+          const raw = await res.text();
+          let parsed;
+          try {
+            parsed = JSON.parse(raw);
+          } catch {
+            parsed = null;
+          }
+
+          if (!res.ok) {
+            const apiError = parsed && parsed.error ? parsed.error : raw || "Request failed.";
+            throw new Error(apiError);
+          }
+
+          cache = Array.isArray(parsed) ? parsed : [];
           render(cache);
           statusEl.textContent = `Loaded ${cache.length} submissions.`;
         } catch (err) {
