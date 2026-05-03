@@ -122,8 +122,8 @@ async function sendEmail(payload) {
       `Phone: ${payload.phone}`,
       `Email: ${payload.email}`,
       `Company: ${payload.company || "-"}`,
-      `Industry: ${payload.industry || "-"}`,
-      `Project: ${payload.project || "-"}`,
+      `Industry / services: ${payload.industry || "-"}`,
+      `Project / message: ${payload.project || "-"}`,
       `Submitted At: ${payload.submitted_at}`
     ];
 
@@ -196,8 +196,21 @@ app.get("*", (_req, res) => {
 });
 
 if (require.main === module) {
-  app.listen(PORT, () => {
+  const server = app.listen(PORT, () => {
     console.log(`Landing page running on http://localhost:${PORT}`);
+  });
+
+  server.on("error", (err) => {
+    if (err.code === "EADDRINUSE") {
+      console.error(`\nPort ${PORT} is already in use (another app or an old server is still running).\n`);
+      console.error("Options:");
+      console.error(`  • Use another port:  set PORT=3001&&npm start`);
+      console.error(`    PowerShell:        $env:PORT=3001; npm start`);
+      console.error(`  • Free port ${PORT}:   netstat -ano | findstr :${PORT}`);
+      console.error("    Then end the PID from Task Manager or: taskkill /PID <pid> /F\n");
+      process.exit(1);
+    }
+    throw err;
   });
 }
 

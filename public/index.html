@@ -8,9 +8,27 @@
       content="Tailored Odoo ERP implementation, integration, customization, and support for SMBs in the UAE."
     />
     <title>Tailored Odoo ERP Services for UAE SMBs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/css/intlTelInput.css"
+    />
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
+    <header class="site-header">
+      <div class="container site-header-inner">
+        <a href="/" class="site-logo-link">
+          <img
+            class="site-logo"
+            src="/assets/datalab-logo.svg"
+            alt="DataLabX Systems FZCO"
+            width="200"
+            height="40"
+          />
+        </a>
+        <a href="#leadForm" class="site-header-cta">Book a call</a>
+      </div>
+    </header>
     <div class="aurora-bg" aria-hidden="true">
       <span class="aurora aurora-a"></span>
       <span class="aurora aurora-b"></span>
@@ -20,46 +38,122 @@
       <section class="hero section">
         <div class="container grid">
           <div class="hero-copy">
-            <span class="badge">Certified Odoo ERP Reseller - UAE</span>
-            <h1>Run Your Entire Business on One Odoo ERP Platform</h1>
-            <p>
-              We help UAE SMBs centralize sales, accounting, inventory, CRM, HR,
-              and operations into one clean system built around your exact
-              workflow.
+            <span class="badge">Certified Odoo Partner - UAE</span>
+            <h1>Your Business.<br />Live on Odoo. In 4 Weeks.</h1>
+            <p class="hero-sub">
+              Inventory, VAT, invoicing, purchasing and sales<br />
+              Fixed scope. Fixed price. No surprises.
             </p>
-            <ul class="highlights">
-              <li>Official reseller-led consulting, implementation, and customization</li>
-              <li>Migration from legacy ERP with secure data continuity</li>
-              <li>Go-live support, team training, and ongoing optimization</li>
-            </ul>
-            <div class="mini-kpis">
+            <div class="mini-kpis mini-kpis-centered">
               <article>
-                <strong>95%</strong>
+                <strong>100%</strong>
                 <span>Customer retention</span>
               </article>
               <article>
-                <strong>80%</strong>
-                <span>Faster turnaround</span>
+                <strong>Big 4</strong>
+                <span>consulting Background</span>
               </article>
               <article>
-                <strong>15M+</strong>
-                <span>Global Odoo users</span>
+                <strong>6 weeks</strong>
+                <span>Go live!</span>
               </article>
             </div>
-            <div class="hero-visual card">
-              <div class="hero-visual-top">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="hero-metric-grid">
-                <div><strong>+32%</strong><span>Revenue visibility</span></div>
-                <div><strong>-41%</strong><span>Manual tasks</span></div>
-                <div><strong>98%</strong><span>Order accuracy</span></div>
-                <div><strong>24/7</strong><span>Live dashboards</span></div>
-              </div>
+
+            <div class="modules-grid" role="list">
+              <a
+                class="module-tile"
+                role="listitem"
+                href="https://www.odoo.com/app/accounting"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="module-tile-icon"><img src="/assets/invoicing%20icon.png" alt="" width="48" height="48" /></span>
+                <span class="module-tile-label">Accounting</span>
+              </a>
+              <a
+                class="module-tile"
+                role="listitem"
+                href="https://www.odoo.com/app/purchase"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="module-tile-icon"><img src="/assets/Purchase_icon.png" alt="" width="48" height="48" /></span>
+                <span class="module-tile-label">Purchase</span>
+              </a>
+              <a
+                class="module-tile"
+                role="listitem"
+                href="https://www.odoo.com/app/sales"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="module-tile-icon"><img src="/assets/Sales_icon.png" alt="" width="48" height="48" /></span>
+                <span class="module-tile-label">Sales</span>
+              </a>
+              <a
+                class="module-tile"
+                role="listitem"
+                href="https://www.odoo.com/app/inventory"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="module-tile-icon"><img src="/assets/Inventory_icon.png" alt="" width="48" height="48" /></span>
+                <span class="module-tile-label">Inventory</span>
+              </a>
+              <a
+                class="module-tile"
+                role="listitem"
+                href="https://www.odoo.com/app/crm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="module-tile-icon"><img src="/assets/CRM_icon.png" alt="" width="48" height="48" /></span>
+                <span class="module-tile-label">CRM</span>
+              </a>
+              <a
+                class="module-tile"
+                role="listitem"
+                href="https://www.odoo.com/app/manufacturing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="module-tile-icon"><img src="/assets/Manufacturing_icon.png" alt="" width="48" height="48" /></span>
+                <span class="module-tile-label">Manufacturing</span>
+              </a>
+              <a
+                class="module-tile"
+                role="listitem"
+                href="https://www.odoo.com/app/invoicing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="module-tile-icon"><img src="/assets/invoicing%20icon.png" alt="" width="48" height="48" /></span>
+                <span class="module-tile-label">Invoicing</span>
+              </a>
+              <a
+                class="module-tile"
+                role="listitem"
+                href="https://www.odoo.com/app/ai"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="module-tile-icon"><img src="/assets/AI_icon.svg" alt="" width="48" height="48" /></span>
+                <span class="module-tile-label">AI</span>
+              </a>
+              <a
+                class="module-tile"
+                role="listitem"
+                href="https://www.odoo.com/app/point-of-sale-sale"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="module-tile-icon"><img src="/assets/POS_Icon.png" alt="" width="48" height="48" /></span>
+                <span class="module-tile-label">POS</span>
+              </a>
             </div>
           </div>
 
-          <form id="leadForm" class="lead-form card" novalidate>
+          <form id="leadForm" class="lead-form lead-form-compact card" novalidate>
             <h2>Ready to scale your business?</h2>
             <p>Fill out the form, and leave the rest to our dedicated experts.</p>
 
@@ -67,201 +161,644 @@
             <input id="name" name="name" type="text" required autocomplete="given-name" />
 
             <label for="phone">Phone Number</label>
-            <input id="phone" name="phone" type="tel" required autocomplete="tel" />
+            <div class="phone-input-wrap">
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                required
+                autocomplete="tel"
+                placeholder="50 123 4567"
+              />
+            </div>
 
             <label for="email">Email Address</label>
             <input id="email" name="email" type="email" required autocomplete="email" />
 
-            <label for="company">Company Name</label>
-            <input id="company" name="company" type="text" autocomplete="organization" />
-
-            <label for="industry">Industry</label>
-            <select id="industry" name="industry">
-              <option value="">Select industry</option>
-              <option value="Trading">Trading</option>
-              <option value="Distribution">Distribution</option>
-              <option value="F&B">F&B</option>
-              <option value="Manufacturing">Manufacturing</option>
-            </select>
-
-            <label for="project">Tell us about your project</label>
+            <label for="project">Tell us About your Project...</label>
             <textarea id="project" name="project" rows="3"></textarea>
 
-            <button type="submit">Book Free Odoo Consultation</button>
+            <button type="submit" class="btn-hero-discovery">
+              Book a Free Discovery Call
+              <span class="btn-chevron" aria-hidden="true">&rsaquo;</span>
+            </button>
             <p class="form-msg" id="formMessage" aria-live="polite"></p>
           </form>
         </div>
       </section>
 
-      <section class="section social-proof">
+      <section class="section trust-platform">
         <div class="container">
-          <div class="proof-card card">
-            <p class="proof-number">15M+</p>
-            <p class="proof-text">users worldwide trust Odoo to run business operations.</p>
-          </div>
-          <div class="logo-strip">
-            <span>Trusted by UAE SMB teams in</span>
-            <p>Trading</p>
-            <p>Distribution</p>
-            <p>F&amp;B</p>
-            <p>Manufacturing</p>
+          <header class="trust-platform-header">
+            <h2 class="trust-platform-title">
+              Delivering a platform <em>15 Million</em> businesses already trust!
+            </h2>
+            <p class="trust-platform-sub">
+              Bringing Odoo enterprise capability to UAE with local expertise, hands on implementation and
+              support that goes beyond go live!
+            </p>
+          </header>
+          <div class="trust-banner card">
+            <div class="trust-banner-copy">
+              <p class="trust-banner-kicker">#1</p>
+              <p class="trust-banner-lead">
+                Open source <span class="erp-underline">ERP</span>
+              </p>
+            </div>
+            <ul class="trust-banner-badges">
+              <li class="trust-badge">
+                <img src="/assets/CRM_icon.png" alt="" width="28" height="28" />
+                <span>Big 4 Consulting Background</span>
+              </li>
+              <li class="trust-badge">
+                <img src="/assets/Inventory_icon.png" alt="" width="28" height="28" />
+                <span>Go-live in weeks, not months</span>
+              </li>
+              <li class="trust-badge">
+                <img src="/assets/Sales_icon.png" alt="" width="28" height="28" />
+                <span>Odoo Partner</span>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section odoo-cta-section">
         <div class="container">
-          <h2>Product Experience Preview</h2>
-          <p class="section-intro">
-            Responsive dashboard concepts designed to feel native to modern Odoo workflows.
+          <button type="button" class="btn-odoo-cta open-contact-modal">
+            Find out how Odoo works for you!
+          </button>
+        </div>
+      </section>
+
+      <section class="section testimonial-section">
+        <div class="container">
+          <figure class="testimonial-card card">
+            <span class="testimonial-quote-mark" aria-hidden="true">&ldquo;</span>
+            <img
+              class="testimonial-avatar"
+              src="/assets/2.%20Testinomial_Client%20Head%20shot.png"
+              alt=""
+              width="72"
+              height="72"
+            />
+            <blockquote class="testimonial-quote">
+              Live in weeks. Clean Inventory. VAT compliant books. Peace of mind.
+            </blockquote>
+            <div class="testimonial-person">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p class="testimonial-name">Mehmood Saleh</p>
+              <p class="testimonial-role">COO Target Chemicals</p>
+            </div>
+            <img
+              class="testimonial-logo"
+              src="/assets/2.%20Testinomial_Client%20Logo.png"
+              alt="Target Chemicals"
+              width="120"
+              height="40"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section pain-journey-section">
+        <div class="container">
+          <div class="empathy-block card-soft">
+            <h2 class="empathy-heading">Running a business shouldn&rsquo;t feel like this.</h2>
+            <div class="empathy-tags" role="list">
+              <span role="listitem">Overwhelmed by spreadsheets</span>
+              <span role="listitem">Chasing numbers manually</span>
+              <span role="listitem">Blind to what&rsquo;s profitable</span>
+              <span role="listitem">Always firefighting</span>
+              <span role="listitem">Paying for chaos</span>
+              <span role="listitem">Tools that don&rsquo;t talk to each other</span>
+            </div>
+          </div>
+
+          <h2 class="problem-serif-title">One business, many problems?</h2>
+          <div class="ppc-grid">
+            <article class="ppc-card">
+              <div class="ppc-icon ppc-icon--problem" aria-hidden="true">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="4" y="3" width="16" height="18" rx="2" />
+                  <path d="M8 8h8M8 12h5M8 16h6" />
+                </svg>
+              </div>
+              <h3 class="ppc-card-title">Accounting is behind</h3>
+              <p class="ppc-card-text">
+                Your team re-enters sales and expenses from WhatsApp screenshots and PDFs into spreadsheets
+                &mdash; then again into accounting. Books are never current when you need a decision.
+              </p>
+              <span class="ppc-tag ppc-tag--warn">Manual rework</span>
+            </article>
+            <article class="ppc-card">
+              <div class="ppc-icon ppc-icon--problem" aria-hidden="true">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 20h16M6 16l3-8 4 5 3-6 2 9" />
+                  <rect x="3" y="4" width="18" height="4" rx="1" />
+                </svg>
+              </div>
+              <h3 class="ppc-card-title">Stock discrepancies</h3>
+              <p class="ppc-card-text">
+                The warehouse count says one number, the system says another, and finance is caught in the
+                middle. Fulfilment slows down and nobody trusts the report.
+              </p>
+              <span class="ppc-tag ppc-tag--warn">Inventory chaos</span>
+            </article>
+            <article class="ppc-card">
+              <div class="ppc-icon ppc-icon--problem" aria-hidden="true">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 19V5M4 19h16M8 15v4M12 11v8M16 13v6" />
+                </svg>
+              </div>
+              <h3 class="ppc-card-title">No profit visibility</h3>
+              <p class="ppc-card-text">
+                You can see revenue, but not which products, customers, or channels actually make money after
+                costs. Pricing and promotions are guesswork.
+              </p>
+              <span class="ppc-tag ppc-tag--warn">Blind margins</span>
+            </article>
+            <article class="ppc-card">
+              <div class="ppc-icon ppc-icon--problem" aria-hidden="true">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M8 10h8M8 14h5M12 3v3M9 21h6" />
+                  <rect x="5" y="6" width="14" height="12" rx="2" />
+                </svg>
+              </div>
+              <h3 class="ppc-card-title">Sales on WhatsApp</h3>
+              <p class="ppc-card-text">
+                Orders land as voice notes and chat threads. Nothing ties cleanly to inventory or invoicing,
+                and there is no audit trail when something goes wrong.
+              </p>
+              <span class="ppc-tag ppc-tag--warn">Zero traceability</span>
+            </article>
+            <article class="ppc-card">
+              <div class="ppc-icon ppc-icon--problem" aria-hidden="true">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 7h16M4 7l2 14h12l2-14M9 7V5h6v2" />
+                </svg>
+              </div>
+              <h3 class="ppc-card-title">POs are guesswork</h3>
+              <p class="ppc-card-text">
+                You run out of bestsellers at the worst times and over-order slow movers because planning lives
+                in someone&rsquo;s head instead of the system.
+              </p>
+              <span class="ppc-tag ppc-tag--warn">Lost revenue</span>
+            </article>
+            <article class="ppc-card">
+              <div class="ppc-icon ppc-icon--problem" aria-hidden="true">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="3" y="6" width="18" height="12" rx="2" />
+                  <path d="M7 10h10M7 14h6" />
+                </svg>
+              </div>
+              <h3 class="ppc-card-title">ERP quotes are insane</h3>
+              <p class="ppc-card-text">
+                Traditional vendors quote hundreds of thousands of dirhams and multi-year timelines. You need
+                control now, not a five-year programme.
+              </p>
+              <span class="ppc-tag ppc-tag--warn">Inaccessible pricing</span>
+            </article>
+          </div>
+
+          <div class="section-inline-cta">
+            <button type="button" class="btn-odoo-cta open-contact-modal">Find out more!</button>
+          </div>
+
+          <h2 class="solution-heading">One platform, everything connected.</h2>
+          <div class="ppc-grid">
+            <article class="ppc-card ppc-card--solution">
+              <div class="ppc-icon-solution">
+                <img src="/assets/invoicing%20icon.png" alt="" width="44" height="44" />
+              </div>
+              <h3 class="ppc-card-title">Real-time accounting</h3>
+              <p class="ppc-card-text">
+                Every sale, purchase, and payment auto-posts to your ledger. Your books stay current without
+                manual re-keying between systems.
+              </p>
+              <span class="ppc-tag ppc-tag--ok">Odoo Accounting</span>
+            </article>
+            <article class="ppc-card ppc-card--solution">
+              <div class="ppc-icon-solution">
+                <img src="/assets/Inventory_icon.png" alt="" width="44" height="44" />
+              </div>
+              <h3 class="ppc-card-title">Live stock accuracy</h3>
+              <p class="ppc-card-text">
+                Barcode scanning, transfers, and adjustments flow straight into inventory so warehouse and
+                finance always see the same numbers.
+              </p>
+              <span class="ppc-tag ppc-tag--ok">Odoo Inventory</span>
+            </article>
+            <article class="ppc-card ppc-card--solution">
+              <div class="ppc-icon-solution">
+                <img src="/assets/Sales_icon.png" alt="" width="44" height="44" />
+              </div>
+              <h3 class="ppc-card-title">Profit clarity, every deal</h3>
+              <p class="ppc-card-text">
+                Margins by product, customer, and channel land in one reporting layer so leadership can steer
+                with facts, not gut feel.
+              </p>
+              <span class="ppc-tag ppc-tag--ok">Odoo Reporting</span>
+            </article>
+            <article class="ppc-card ppc-card--solution">
+              <div class="ppc-icon-solution">
+                <img src="/assets/CRM_icon.png" alt="" width="44" height="44" />
+              </div>
+              <h3 class="ppc-card-title">Structured sales pipeline</h3>
+              <p class="ppc-card-text">
+                Quotes, orders, and invoices chain together in one system so nothing falls through the cracks
+                between CRM and finance.
+              </p>
+              <span class="ppc-tag ppc-tag--ok">Odoo Sales &amp; CRM</span>
+            </article>
+            <article class="ppc-card ppc-card--solution">
+              <div class="ppc-icon-solution">
+                <img src="/assets/Purchase_icon.png" alt="" width="44" height="44" />
+              </div>
+              <h3 class="ppc-card-title">Automated reordering</h3>
+              <p class="ppc-card-text">
+                Set reorder rules and let Odoo raise purchase proposals when stock hits your thresholds instead
+                of chasing buyers with spreadsheets.
+              </p>
+              <span class="ppc-tag ppc-tag--ok">Odoo Purchase</span>
+            </article>
+            <article class="ppc-card ppc-card--solution">
+              <div class="ppc-icon-solution">
+                <img src="/assets/Manufacturing_icon.png" alt="" width="44" height="44" />
+              </div>
+              <h3 class="ppc-card-title">Enterprise ERP, SMB price</h3>
+              <p class="ppc-card-text">
+                Full Odoo implementation with fixed scope and partner-led delivery &mdash; a fraction of
+                traditional enterprise ERP quotes.
+              </p>
+              <span class="ppc-tag ppc-tag--ok">Certified Reseller Pricing</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services-trio-section">
+        <div class="container">
+          <h2 class="services-trio-h2">Live in weeks, not months</h2>
+          <p class="services-trio-sub">
+            A proven process honed from Big 4 ERP delivery &mdash; minus the Big 4 price tag!
           </p>
-          <div class="screens-grid">
-            <article class="screen card">
-              <div class="screen-top">
-                <span></span><span></span><span></span>
+          <div class="services-trio-grid">
+            <article class="services-trio-card card">
+              <div class="services-trio-icon" aria-hidden="true">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.4">
+                  <circle cx="10" cy="8" r="3" />
+                  <path d="M4 20v-1a5 5 0 0 1 5-5h2a5 5 0 0 1 4 2" />
+                  <circle cx="17" cy="17" r="3" />
+                  <path d="M21 21l-2-2" />
+                </svg>
               </div>
-              <div class="screen-body">
-                <div class="screen-kpi-row">
-                  <div class="kpi-chip">Leads 248</div>
-                  <div class="kpi-chip">Won 92</div>
-                </div>
-                <div class="bar w-70"></div>
-                <div class="pipeline-row">
-                  <span class="p1"></span><span class="p2"></span><span class="p3"></span><span class="p4"></span>
-                </div>
-              </div>
-              <h3>CRM &amp; Pipeline</h3>
+              <h3 class="services-trio-card-title">Odoo Consulting Services</h3>
+              <p class="services-trio-card-text">
+                Unlock the complete potential of your business with our Odoo consulting services. We manage
+                every aspect of consulting for your operations, from Odoo functional consulting to Odoo
+                technical consulting. We ensure your ERP runs the way you need, when you need it. Tap into the
+                future of your operations today!
+              </p>
             </article>
-
-            <article class="screen card">
-              <div class="screen-top">
-                <span></span><span></span><span></span>
+            <article class="services-trio-card card">
+              <div class="services-trio-icon" aria-hidden="true">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v1M12 21v1M4.2 4.2l.7.7M19.1 19.1l.7.7M2 12h1M21 12h1M4.2 19.8l.7-.7M19.1 4.9l.7-.7" />
+                  <path d="M12 6a4 4 0 0 0-2.8 6.9c.5.5.8 1.1.8 1.7V16h4v-1.4c0-.6.3-1.2.8-1.7A4 4 0 0 0 12 6z" />
+                  <path d="M9 18h6M10 22h4" />
+                </svg>
               </div>
-              <div class="screen-body">
-                <div class="bar w-60"></div>
-                <div class="order-table">
-                  <p><span>SO-1041</span><strong>AED 12,450</strong></p>
-                  <p><span>SO-1040</span><strong>AED 9,880</strong></p>
-                  <p><span>SO-1039</span><strong>AED 6,410</strong></p>
-                </div>
-              </div>
-              <h3>Sales &amp; Quotations</h3>
+              <h3 class="services-trio-card-title">Odoo Implementation Services</h3>
+              <p class="services-trio-card-text">
+                Streamline your everyday operations with our end-to-end Odoo ERP implementation. Our proven
+                Odoo implementation methodology is designed around businesses across industries. Our tailored
+                Odoo ERP implementation services help you go live faster confidently and cost-effectively.
+              </p>
             </article>
-
-            <article class="screen card">
-              <div class="screen-top">
-                <span></span><span></span><span></span>
+            <article class="services-trio-card card">
+              <div class="services-trio-icon" aria-hidden="true">
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.4">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                </svg>
               </div>
-              <div class="screen-body">
-                <div class="bar w-50"></div>
-                <div class="stock-grid">
-                  <p><span>In Stock</span><strong>4,892</strong></p>
-                  <p><span>Low Stock</span><strong>37</strong></p>
-                  <p><span>Transit</span><strong>212</strong></p>
-                </div>
-              </div>
-              <h3>Inventory &amp; Warehouse</h3>
+              <h3 class="services-trio-card-title">Odoo Integration Services</h3>
+              <p class="services-trio-card-text">
+                Don&rsquo;t let your operations fall down the crack, streamline working parts of your operations
+                with our Odoo Integration services. Collaborate with experts who can help you streamline
+                everything from payment gateways and CRMs to logistics, eCommerce, and marketing platforms.
+              </p>
             </article>
-
-            <article class="screen card">
-              <div class="screen-top">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="screen-body">
-                <div class="bar w-80"></div>
-                <div class="finance-split">
-                  <div>
-                    <span>Cashflow</span>
-                    <strong>AED 1.24M</strong>
-                  </div>
-                  <div>
-                    <span>Receivables</span>
-                    <strong>AED 320K</strong>
-                  </div>
-                </div>
-              </div>
-              <h3>Accounting &amp; Finance</h3>
-            </article>
+          </div>
+          <div class="section-inline-cta">
+            <button type="button" class="btn-odoo-cta open-contact-modal">Find out more!</button>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section why-dls-section">
         <div class="container">
-          <h2>Industries We Serve</h2>
-          <div class="industry-grid">
-            <article class="card">
-              <div class="industry-icon">🛒</div>
-              <h3>Trading</h3>
-              <p>Control purchasing, stock, and customer invoicing from one ERP.</p>
+          <h2 class="why-dls-h1">Why DataLab Systems as Odoo Implementation Partner?</h2>
+          <p class="why-dls-tagline">Not just another Odoo partner!</p>
+          <div class="why-dls-grid">
+            <article class="why-dls-card card">
+              <div class="why-dls-icon" aria-hidden="true">
+                <span class="why-dls-icon-num">1</span>
+              </div>
+              <h3 class="why-dls-card-title">Big 4 Delivery. <span class="why-dls-sub">SMB pricing.</span></h3>
+              <p class="why-dls-card-text">
+                Led by an ex-PwC Oracle Fusion consultant with MENA enterprise experience &mdash; structured
+                implementations, not freelance guesswork.
+              </p>
             </article>
-            <article class="card">
-              <div class="industry-icon">🚚</div>
-              <h3>Distribution</h3>
-              <p>Optimize warehouse flow, dispatch accuracy, and order fulfillment.</p>
+            <article class="why-dls-card card">
+              <div class="why-dls-icon" aria-hidden="true">
+                <span class="why-dls-icon-num">2</span>
+              </div>
+              <h3 class="why-dls-card-title">Live in weeks. <span class="why-dls-sub">Fixed price.</span></h3>
+              <p class="why-dls-card-text">
+                Everything scoped in a signed SOW before day one. No billable hours, no scope creep, no surprise
+                invoices midway through.
+              </p>
             </article>
-            <article class="card">
-              <div class="industry-icon">🍽️</div>
-              <h3>F&amp;B</h3>
-              <p>Unify POS, kitchen inventory, and finance with real-time visibility.</p>
+            <article class="why-dls-card card">
+              <div class="why-dls-icon" aria-hidden="true">
+                <span class="why-dls-icon-num">3</span>
+              </div>
+              <h3 class="why-dls-card-title">UAE based. <span class="why-dls-sub">Not offshore.</span></h3>
+              <p class="why-dls-card-text">
+                Based in Dubai Silicon Oasis. Same timezone, Arabic-capable, available for on-site visits. No
+                6am calls with a developer in another continent.
+              </p>
             </article>
-            <article class="card">
-              <div class="industry-icon">🏭</div>
-              <h3>Manufacturing</h3>
-              <p>Plan production, manage BOMs, and reduce downtime with automation.</p>
+            <article class="why-dls-card card">
+              <div class="why-dls-icon" aria-hidden="true">
+                <span class="why-dls-icon-num">4</span>
+              </div>
+              <h3 class="why-dls-card-title">Odoo partner</h3>
+              <p class="why-dls-card-text">
+                Certified, trained and recognised directly by Odoo
+              </p>
             </article>
+          </div>
+          <div class="section-inline-cta">
+            <button type="button" class="btn-odoo-cta open-contact-modal">Contact us!</button>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section faq-section">
+        <div class="container faq-layout">
+          <div class="faq-intro">
+            <p class="faq-kicker">Got Questions?</p>
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+          </div>
+          <div class="faq-accordion" id="faqAccordion">
+            <div class="faq-item">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <span>What happens if we go over the 150 hours in our scope?</span>
+                <span class="faq-chevron" aria-hidden="true"></span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>
+                  You don&rsquo;t pay more &mdash; that&rsquo;s the point of fixed-scope pricing. During
+                  discovery, we define exactly what&rsquo;s being delivered: modules, users, warehouses,
+                  reports, integrations, and data migration volume. Everything inside that scope is covered,
+                  regardless of how many hours it actually takes us. If it runs long, that&rsquo;s on us, not you.
+                </p>
+                <p>
+                  If you decide mid-project to add something outside the original scope &mdash; say, a new
+                  module, an extra integration, or a custom workflow we didn&rsquo;t plan for &mdash; we send you
+                  a written change order with a fixed add-on price before any work starts. Nothing happens
+                  without your sign-off.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <span>We already use QuickBooks / Tally / Excel &mdash; how does our historical data get migrated?</span>
+                <span class="faq-chevron" aria-hidden="true"></span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>
+                  Data migration is included in every tier. We handle your customer master, supplier master,
+                  product catalog with SKUs, open invoices (AR/AP), and opening stock balances as standard. Tier
+                  limits apply by volume; anything beyond that is scoped during discovery so you know the cost
+                  upfront.
+                </p>
+                <p>
+                  The process: we give you templated extract sheets, your team (or ours, if you prefer) fills
+                  them in from your existing system, we validate the data, run a dry-run migration to staging for
+                  you to review, then migrate to production the weekend before go-live. Nothing goes live until
+                  you&rsquo;ve tested and signed off.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item is-open">
+              <button type="button" class="faq-trigger" aria-expanded="true">
+                <span>Is our data safe and where is it hosted?</span>
+                <span class="faq-chevron" aria-hidden="true"></span>
+              </button>
+              <div class="faq-panel">
+                <p>
+                  By default we deploy on Odoo Online, which runs on Google Cloud infrastructure with automated
+                  daily backups, SSL encryption, and 99.9% uptime. Your data is yours &mdash; you can download a
+                  full backup at any time, and if you ever leave Odoo, you leave with your complete database.
+                </p>
+                <p>
+                  If you have specific requirements around UAE data residency, a private hosting environment, or
+                  you want full server access for custom development, we deploy on Odoo.sh or a dedicated cloud
+                  instance instead &mdash; we&rsquo;ll walk through the options in the discovery call based on
+                  your compliance needs.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item faq-item--placeholder">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                <span>Your next question (coming soon)</span>
+                <span class="faq-chevron" aria-hidden="true"></span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>
+                  We&rsquo;re adding more answers here. Ask us anything on the discovery call &mdash; or use the
+                  contact form and we&rsquo;ll reply within 24 hours.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container faq-cta-block">
+          <button type="button" class="btn-odoo-cta open-contact-modal">Got Questions?</button>
+          <p class="faq-footnote">Talk to an Odoo Expert. Free.</p>
+        </div>
+      </section>
+
+      <section class="section final-cta-section">
         <div class="container">
-          <h2>How It Works</h2>
-          <div class="steps-grid">
-            <article class="card"><span>1</span><p>Discovery call to map your workflows and goals.</p></article>
-            <article class="card"><span>2</span><p>Module selection and implementation roadmap.</p></article>
-            <article class="card"><span>3</span><p>Configuration, migration, and integrations go live.</p></article>
-            <article class="card"><span>4</span><p>Team training, support, and performance optimization.</p></article>
+          <div class="final-cta-card">
+            <h2 class="final-cta-heading">
+              Ready to take your business to the next level?<br />
+              We&rsquo;re only a call away.
+            </h2>
+            <p class="final-cta-body">
+              Over the years we&rsquo;ve helped several businesses leverage Odoo ERP to its complete potential.
+              Next could be your&rsquo;s &mdash; connect with our experts today!
+            </p>
+            <button type="button" class="btn-final-cta open-contact-modal">Contact Us</button>
           </div>
+
+          <div class="footer-brand">
+            <a href="/" class="footer-logo-link">
+              <img
+                class="footer-logo"
+                src="/assets/datalab-logo.svg"
+                alt="DataLabX Systems FZCO"
+                width="200"
+                height="40"
+              />
+            </a>
+          </div>
+
+          <div class="contact-icon-bar" aria-label="Contact links">
+            <a
+              class="contact-icon-link"
+              href="#"
+              title="WhatsApp &mdash; replace with your wa.me link"
+              aria-label="WhatsApp"
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"
+                  stroke="#25D366"
+                  stroke-width="1.3"
+                />
+                <path
+                  d="M8.5 9.5c.2 1.1 1.2 3.2 2.4 4.4s3.3 2.2 4.4 2.4c.5.1 1-.2 1.3-.6l.8-1.1c.2-.3.1-.7-.2-.9l-1.8-.9c-.3-.1-.6 0-.8.2l-.4.4c-.2.2-.5.2-.7.1-.4-.2-1.4-.7-2.5-1.8s-1.6-2.1-1.8-2.5c-.1-.2 0-.5.1-.7l.4-.4c.2-.2.3-.5.2-.8l-.9-1.8c-.2-.3-.6-.4-.9-.2l-1.1.8c-.4.3-.7.8-.6 1.3z"
+                  fill="#25D366"
+                />
+              </svg>
+            </a>
+            <a class="contact-icon-link" href="tel:+971000000000" title="Call us" aria-label="Phone">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1.1.4 2.3.6 3.6.6.7 0 1.2.5 1.2 1.2V20c0 .7-.5 1.2-1.2 1.2C9.4 21.2 2.8 14.6 2.8 6.5c0-.7.5-1.2 1.2-1.2H6c.7 0 1.2.5 1.2 1.2 0 1.2.2 2.4.6 3.6.2.4.1.9-.2 1.2l-2 2z"
+                  stroke="var(--primary)"
+                  stroke-width="1.3"
+                />
+              </svg>
+            </a>
+            <a
+              class="contact-icon-link"
+              href="mailto:hello@example.com"
+              title="Email &mdash; replace with your address"
+              aria-label="Email"
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2" stroke="var(--primary)" stroke-width="1.3" />
+                <path d="M3 7l9 6 9-6" stroke="var(--primary)" stroke-width="1.3" />
+              </svg>
+            </a>
+            <a
+              class="contact-icon-link"
+              href="#"
+              title="LinkedIn &mdash; replace with your company URL"
+              aria-label="LinkedIn"
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M6.5 9.5V20M6.5 6.5h.01M10 20v-6.5a3 3 0 0 1 5.2-2.1M18 20v-6.5a3 3 0 0 0-3-3"
+                  stroke="var(--primary)"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+            <div class="clutch-badge" role="img" aria-label="Reviewed on Clutch, 30 reviews, 5 stars">
+              <span class="clutch-badge-label">REVIEWED ON Clutch</span>
+              <span class="clutch-stars">★★★★★</span>
+              <span class="clutch-count">30 REVIEWS</span>
+            </div>
+          </div>
+
+          <footer class="site-footer">
+            <p>Copyright &copy; 2026 DataLabX Systems FZCO. All Rights Reserved.</p>
+          </footer>
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <h2>Design &amp; Development Delivery</h2>
-          <div class="industry-grid">
-            <article class="card">
-              <h3>Phase 1: Figma Approval</h3>
-              <p>We first deliver your landing concept in Figma for sign-off before coding starts.</p>
-            </article>
-            <article class="card">
-              <h3>Phase 2: Development</h3>
-              <p>After approval, we build a responsive page with clean Odoo-inspired UI and UX.</p>
-            </article>
-            <article class="card">
-              <h3>Lead Form Setup</h3>
-              <p>Autofill-ready form with submissions sent to your email and optional webhook routing.</p>
-            </article>
-            <article class="card">
-              <h3>SEO &amp; Speed</h3>
-              <p>On-page SEO structure and fast-loading assets optimized for mobile campaign traffic.</p>
-            </article>
+      <div
+        class="modal-overlay"
+        id="leadModal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="leadModalTitle"
+        hidden
+      >
+        <div class="modal-dialog card">
+          <div class="modal-header-bar">
+            <h2 id="leadModalTitle" class="modal-title-bar">Let&rsquo;s Work Together</h2>
+            <button type="button" class="modal-close-bar" id="closeLeadModal" aria-label="Close">&times;</button>
           </div>
-        </div>
-      </section>
+          <form id="modalLeadForm" class="modal-form" novalidate>
+            <div class="modal-name-row">
+              <div class="modal-field-grow">
+                <label for="modalFirstName">First Name</label>
+                <input id="modalFirstName" name="first_name" type="text" required autocomplete="given-name" />
+              </div>
+              <div class="modal-field-grow">
+                <label for="modalLastName">Last Name</label>
+                <input id="modalLastName" name="last_name" type="text" required autocomplete="family-name" />
+              </div>
+            </div>
 
-      <section class="section cta">
-        <div class="container cta-wrap card">
-          <h2>Ready to launch your Odoo ERP transformation?</h2>
-          <p>
-            Get a tailored scope, timeline, and implementation plan from a certified
-            Odoo reseller team focused on UAE SMB growth.
-          </p>
-          <a href="#leadForm">Get Your Free ERP Assessment</a>
+            <label for="modalEmail">Email Address</label>
+            <input id="modalEmail" name="email" type="email" required autocomplete="email" />
+
+            <label for="modalPhone">Phone Number</label>
+            <div class="phone-input-wrap">
+              <input
+                id="modalPhone"
+                name="phone"
+                type="tel"
+                required
+                autocomplete="tel"
+                placeholder="50 123 4567"
+              />
+            </div>
+
+            <label for="modalCompany">Company Name</label>
+            <input id="modalCompany" name="company" type="text" autocomplete="organization" />
+
+            <label for="modalServices">Select the Services</label>
+            <select id="modalServices" name="services">
+              <option value="">-- Select the Services --</option>
+              <option value="Implementation">Implementation</option>
+              <option value="Customization">Customization</option>
+              <option value="Migration">Migration</option>
+              <option value="Support">Support</option>
+              <option value="Training">Training</option>
+              <option value="Other">Other</option>
+            </select>
+
+            <label for="modalMessage">Tell us about your Projects</label>
+            <textarea
+              id="modalMessage"
+              name="project"
+              rows="4"
+              placeholder="Tell Us about your Projects..."
+            ></textarea>
+
+            <button type="submit" class="btn-connect modal-submit-btn">Submit</button>
+            <p class="form-msg" id="modalFormMessage" aria-live="polite"></p>
+          </form>
         </div>
-      </section>
+      </div>
     </main>
 
-    <script src="/app.js" defer></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/js/intlTelInputWithUtils.min.js"
+    ></script>
+    <script defer src="/app.js"></script>
   </body>
 </html>
