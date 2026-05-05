@@ -1,9 +1,26 @@
 const leadForm = document.getElementById("leadForm");
 const formMessage = document.getElementById("formMessage");
+
+function updateLeadFormIntroState() {
+  if (!leadForm) return;
+  const name = leadForm.querySelector("#name")?.value?.trim() ?? "";
+  const email = leadForm.querySelector("#email")?.value?.trim() ?? "";
+  const project = leadForm.querySelector("#project")?.value?.trim() ?? "";
+  const phoneEl = document.getElementById("phone");
+  const phoneDigits = phoneEl ? String(phoneEl.value || "").replace(/\D/g, "") : "";
+  const hasValue = Boolean(name || email || project || phoneDigits.length > 0);
+  leadForm.classList.toggle("has-field-value", hasValue);
+}
 const leadModal = document.getElementById("leadModal");
 const closeLeadModalBtn = document.getElementById("closeLeadModal");
 const modalLeadForm = document.getElementById("modalLeadForm");
 const modalFormMessage = document.getElementById("modalFormMessage");
+const modalServicesSelect = document.getElementById("modalServices");
+
+function syncModalServicesPlaceholder() {
+  if (!modalServicesSelect) return;
+  modalServicesSelect.classList.toggle("is-placeholder", !modalServicesSelect.value);
+}
 
 let lastModalOpener = null;
 
@@ -121,6 +138,7 @@ async function onHeroSubmit(event) {
     const data = await postLead(payload, formMessage);
     leadForm.reset();
     clearPhoneInput(phoneEl);
+    updateLeadFormIntroState();
     formMessage.textContent = (data && data.message) || "Submitted successfully.";
     formMessage.style.color = "#166534";
   } catch (error) {
@@ -159,6 +177,7 @@ async function onModalSubmit(event) {
     const data = await postLead(payload, modalFormMessage);
     modalLeadForm.reset();
     clearPhoneInput(phoneEl);
+    syncModalServicesPlaceholder();
     modalFormMessage.textContent = (data && data.message) || "Submitted successfully.";
     modalFormMessage.style.color = "#166534";
     setTimeout(() => closeModal(), 1200);
@@ -175,6 +194,7 @@ function openModal(fromEvent) {
   leadModal.hidden = false;
   document.body.style.overflow = "hidden";
   initPhoneInputs();
+  syncModalServicesPlaceholder();
   const first = modalLeadForm?.querySelector("#modalFirstName");
   if (first) first.focus();
 }
@@ -230,7 +250,10 @@ function initFaqAccordion() {
 
 function boot() {
   initPhoneInputs();
+  document.getElementById("phone")?.addEventListener("countrychange", updateLeadFormIntroState);
   initFaqAccordion();
+  updateLeadFormIntroState();
+  syncModalServicesPlaceholder();
 }
 
 if (document.readyState === "loading") {
@@ -240,7 +263,12 @@ if (document.readyState === "loading") {
 }
 
 if (leadForm) leadForm.addEventListener("submit", onHeroSubmit);
+if (leadForm) {
+  leadForm.addEventListener("input", updateLeadFormIntroState);
+  leadForm.addEventListener("change", updateLeadFormIntroState);
+}
 if (modalLeadForm) modalLeadForm.addEventListener("submit", onModalSubmit);
+modalServicesSelect?.addEventListener("change", syncModalServicesPlaceholder);
 
 document.querySelectorAll(".open-contact-modal").forEach((btn) => {
   btn.addEventListener("click", (e) => openModal(e));

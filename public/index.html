@@ -18,20 +18,6 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container site-header-inner">
-        <a href="/" class="site-logo-link">
-          <img
-            class="site-logo"
-            src="/assets/datalab-logo.svg"
-            alt="DataLabX Systems FZCO"
-            width="200"
-            height="40"
-          />
-        </a>
-        <a href="#leadForm" class="site-header-cta">Book a call</a>
-      </div>
-    </header>
     <div class="aurora-bg" aria-hidden="true">
       <span class="aurora aurora-a"></span>
       <span class="aurora aurora-b"></span>
@@ -39,10 +25,71 @@
     </div>
     <main>
       <section class="hero section">
-        <div class="container grid">
-          <div class="hero-copy">
-            <span class="badge">Certified Odoo Partner - UAE</span>
+        <div class="container hero-grid">
+          <div class="hero-lead">
             <h1>Your Business.<br />Live on Odoo. In 4 Weeks.</h1>
+          </div>
+
+          <form id="leadForm" class="lead-form lead-form-compact card" novalidate>
+            <h2>Ready to scale your business?</h2>
+            <p class="lead-form-intro">Fill out the form, and leave the rest to our dedicated experts.</p>
+
+            <div class="lead-field">
+              <label for="name" class="visually-hidden">First Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                required
+                autocomplete="given-name"
+                placeholder="First name"
+              />
+            </div>
+
+            <div class="lead-field">
+              <label for="phone" class="visually-hidden">Phone Number</label>
+              <div class="phone-input-wrap">
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  required
+                  autocomplete="tel"
+                  placeholder="e.g. 50 123 4567"
+                />
+              </div>
+            </div>
+
+            <div class="lead-field">
+              <label for="email" class="visually-hidden">Email Address</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                autocomplete="email"
+                placeholder="Email address"
+              />
+            </div>
+
+            <div class="lead-field">
+              <label for="project" class="visually-hidden">Tell us about your project</label>
+              <textarea
+                id="project"
+                name="project"
+                rows="3"
+                placeholder="Tell us about your project…"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-hero-discovery">
+              Book a Free Discovery Call
+              <span class="btn-chevron" aria-hidden="true">&rsaquo;</span>
+            </button>
+            <p class="form-msg" id="formMessage" aria-live="polite"></p>
+          </form>
+
+          <div class="hero-tail">
             <p class="hero-sub">
               Inventory, VAT, invoicing, purchasing and sales<br />
               Fixed scope. Fixed price. No surprises.
@@ -61,132 +108,7 @@
                 <span>Go live!</span>
               </article>
             </div>
-
-            <div class="modules-grid" role="list">
-              <a
-                class="module-tile"
-                role="listitem"
-                href="https://www.odoo.com/app/accounting"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span class="module-tile-icon"><img src="/assets/invoicing%20icon.png" alt="" width="48" height="48" /></span>
-                <span class="module-tile-label">Accounting</span>
-              </a>
-              <a
-                class="module-tile"
-                role="listitem"
-                href="https://www.odoo.com/app/purchase"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span class="module-tile-icon"><img src="/assets/Purchase_icon.png" alt="" width="48" height="48" /></span>
-                <span class="module-tile-label">Purchase</span>
-              </a>
-              <a
-                class="module-tile"
-                role="listitem"
-                href="https://www.odoo.com/app/sales"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span class="module-tile-icon"><img src="/assets/Sales_icon.png" alt="" width="48" height="48" /></span>
-                <span class="module-tile-label">Sales</span>
-              </a>
-              <a
-                class="module-tile"
-                role="listitem"
-                href="https://www.odoo.com/app/inventory"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span class="module-tile-icon"><img src="/assets/Inventory_icon.png" alt="" width="48" height="48" /></span>
-                <span class="module-tile-label">Inventory</span>
-              </a>
-              <a
-                class="module-tile"
-                role="listitem"
-                href="https://www.odoo.com/app/crm"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span class="module-tile-icon"><img src="/assets/CRM_icon.png" alt="" width="48" height="48" /></span>
-                <span class="module-tile-label">CRM</span>
-              </a>
-              <a
-                class="module-tile"
-                role="listitem"
-                href="https://www.odoo.com/app/manufacturing"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span class="module-tile-icon"><img src="/assets/Manufacturing_icon.png" alt="" width="48" height="48" /></span>
-                <span class="module-tile-label">Manufacturing</span>
-              </a>
-              <a
-                class="module-tile"
-                role="listitem"
-                href="https://www.odoo.com/app/invoicing"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span class="module-tile-icon"><img src="/assets/invoicing%20icon.png" alt="" width="48" height="48" /></span>
-                <span class="module-tile-label">Invoicing</span>
-              </a>
-              <a
-                class="module-tile"
-                role="listitem"
-                href="https://www.odoo.com/app/ai"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span class="module-tile-icon"><img src="/assets/AI_icon.svg" alt="" width="48" height="48" /></span>
-                <span class="module-tile-label">AI</span>
-              </a>
-              <a
-                class="module-tile"
-                role="listitem"
-                href="https://www.odoo.com/app/point-of-sale-sale"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span class="module-tile-icon"><img src="/assets/POS_Icon.png" alt="" width="48" height="48" /></span>
-                <span class="module-tile-label">POS</span>
-              </a>
-            </div>
           </div>
-
-          <form id="leadForm" class="lead-form lead-form-compact card" novalidate>
-            <h2>Ready to scale your business?</h2>
-            <p>Fill out the form, and leave the rest to our dedicated experts.</p>
-
-            <label for="name">First Name</label>
-            <input id="name" name="name" type="text" required autocomplete="given-name" />
-
-            <label for="phone">Phone Number</label>
-            <div class="phone-input-wrap">
-              <input
-                id="phone"
-                name="phone"
-                type="tel"
-                required
-                autocomplete="tel"
-                placeholder="50 123 4567"
-              />
-            </div>
-
-            <label for="email">Email Address</label>
-            <input id="email" name="email" type="email" required autocomplete="email" />
-
-            <label for="project">Tell us About your Project...</label>
-            <textarea id="project" name="project" rows="3"></textarea>
-
-            <button type="submit" class="btn-hero-discovery">
-              Book a Free Discovery Call
-              <span class="btn-chevron" aria-hidden="true">&rsaquo;</span>
-            </button>
-            <p class="form-msg" id="formMessage" aria-live="polite"></p>
-          </form>
         </div>
       </section>
 
@@ -210,15 +132,12 @@
             </div>
             <ul class="trust-banner-badges">
               <li class="trust-badge">
-                <img src="/assets/CRM_icon.png" alt="" width="28" height="28" />
                 <span>Big 4 Consulting Background</span>
               </li>
               <li class="trust-badge">
-                <img src="/assets/Inventory_icon.png" alt="" width="28" height="28" />
                 <span>Go-live in weeks, not months</span>
               </li>
               <li class="trust-badge">
-                <img src="/assets/Sales_icon.png" alt="" width="28" height="28" />
                 <span>Odoo Partner</span>
               </li>
             </ul>
@@ -253,21 +172,23 @@
               <p class="testimonial-name">Mehmood Saleh</p>
               <p class="testimonial-role">COO Target Chemicals</p>
             </div>
-            <img
-              class="testimonial-logo"
-              src="/assets/2.%20Testinomial_Client%20Logo.png"
-              alt="Target Chemicals"
-              width="120"
-              height="40"
-            />
+            <div class="testimonial-logo-wrap">
+              <img
+                class="testimonial-logo"
+                src="/assets/2.%20Testinomial_Client%20Logo.png"
+                alt="Target Chemicals"
+                width="140"
+                height="48"
+              />
+            </div>
           </figure>
         </div>
       </section>
 
       <section class="section pain-journey-section">
         <div class="container">
+          <h2 class="empathy-section-title">Running a business shouldn&rsquo;t feel like this.</h2>
           <div class="empathy-block card-soft">
-            <h2 class="empathy-heading">Running a business shouldn&rsquo;t feel like this.</h2>
             <div class="empathy-tags" role="list">
               <span role="listitem">Overwhelmed by spreadsheets</span>
               <span role="listitem">Chasing numbers manually</span>
@@ -281,12 +202,6 @@
           <h2 class="problem-serif-title">One business, many problems?</h2>
           <div class="ppc-grid">
             <article class="ppc-card">
-              <div class="ppc-icon ppc-icon--problem" aria-hidden="true">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <rect x="4" y="3" width="16" height="18" rx="2" />
-                  <path d="M8 8h8M8 12h5M8 16h6" />
-                </svg>
-              </div>
               <h3 class="ppc-card-title">Accounting is behind</h3>
               <p class="ppc-card-text">
                 Your team re-enters sales and expenses from WhatsApp screenshots and PDFs into spreadsheets
@@ -295,12 +210,6 @@
               <span class="ppc-tag ppc-tag--warn">Manual rework</span>
             </article>
             <article class="ppc-card">
-              <div class="ppc-icon ppc-icon--problem" aria-hidden="true">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M4 20h16M6 16l3-8 4 5 3-6 2 9" />
-                  <rect x="3" y="4" width="18" height="4" rx="1" />
-                </svg>
-              </div>
               <h3 class="ppc-card-title">Stock discrepancies</h3>
               <p class="ppc-card-text">
                 The warehouse count says one number, the system says another, and finance is caught in the
@@ -309,11 +218,6 @@
               <span class="ppc-tag ppc-tag--warn">Inventory chaos</span>
             </article>
             <article class="ppc-card">
-              <div class="ppc-icon ppc-icon--problem" aria-hidden="true">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M4 19V5M4 19h16M8 15v4M12 11v8M16 13v6" />
-                </svg>
-              </div>
               <h3 class="ppc-card-title">No profit visibility</h3>
               <p class="ppc-card-text">
                 You can see revenue, but not which products, customers, or channels actually make money after
@@ -322,12 +226,6 @@
               <span class="ppc-tag ppc-tag--warn">Blind margins</span>
             </article>
             <article class="ppc-card">
-              <div class="ppc-icon ppc-icon--problem" aria-hidden="true">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M8 10h8M8 14h5M12 3v3M9 21h6" />
-                  <rect x="5" y="6" width="14" height="12" rx="2" />
-                </svg>
-              </div>
               <h3 class="ppc-card-title">Sales on WhatsApp</h3>
               <p class="ppc-card-text">
                 Orders land as voice notes and chat threads. Nothing ties cleanly to inventory or invoicing,
@@ -336,11 +234,6 @@
               <span class="ppc-tag ppc-tag--warn">Zero traceability</span>
             </article>
             <article class="ppc-card">
-              <div class="ppc-icon ppc-icon--problem" aria-hidden="true">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M4 7h16M4 7l2 14h12l2-14M9 7V5h6v2" />
-                </svg>
-              </div>
               <h3 class="ppc-card-title">POs are guesswork</h3>
               <p class="ppc-card-text">
                 You run out of bestsellers at the worst times and over-order slow movers because planning lives
@@ -349,12 +242,6 @@
               <span class="ppc-tag ppc-tag--warn">Lost revenue</span>
             </article>
             <article class="ppc-card">
-              <div class="ppc-icon ppc-icon--problem" aria-hidden="true">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <rect x="3" y="6" width="18" height="12" rx="2" />
-                  <path d="M7 10h10M7 14h6" />
-                </svg>
-              </div>
               <h3 class="ppc-card-title">ERP quotes are insane</h3>
               <p class="ppc-card-text">
                 Traditional vendors quote hundreds of thousands of dirhams and multi-year timelines. You need
@@ -364,16 +251,9 @@
             </article>
           </div>
 
-          <div class="section-inline-cta">
-            <button type="button" class="btn-odoo-cta open-contact-modal">Find out more!</button>
-          </div>
-
           <h2 class="solution-heading">One platform, everything connected.</h2>
           <div class="ppc-grid">
             <article class="ppc-card ppc-card--solution">
-              <div class="ppc-icon-solution">
-                <img src="/assets/invoicing%20icon.png" alt="" width="44" height="44" />
-              </div>
               <h3 class="ppc-card-title">Real-time accounting</h3>
               <p class="ppc-card-text">
                 Every sale, purchase, and payment auto-posts to your ledger. Your books stay current without
@@ -382,9 +262,6 @@
               <span class="ppc-tag ppc-tag--ok">Odoo Accounting</span>
             </article>
             <article class="ppc-card ppc-card--solution">
-              <div class="ppc-icon-solution">
-                <img src="/assets/Inventory_icon.png" alt="" width="44" height="44" />
-              </div>
               <h3 class="ppc-card-title">Live stock accuracy</h3>
               <p class="ppc-card-text">
                 Barcode scanning, transfers, and adjustments flow straight into inventory so warehouse and
@@ -393,9 +270,6 @@
               <span class="ppc-tag ppc-tag--ok">Odoo Inventory</span>
             </article>
             <article class="ppc-card ppc-card--solution">
-              <div class="ppc-icon-solution">
-                <img src="/assets/Sales_icon.png" alt="" width="44" height="44" />
-              </div>
               <h3 class="ppc-card-title">Profit clarity, every deal</h3>
               <p class="ppc-card-text">
                 Margins by product, customer, and channel land in one reporting layer so leadership can steer
@@ -404,9 +278,6 @@
               <span class="ppc-tag ppc-tag--ok">Odoo Reporting</span>
             </article>
             <article class="ppc-card ppc-card--solution">
-              <div class="ppc-icon-solution">
-                <img src="/assets/CRM_icon.png" alt="" width="44" height="44" />
-              </div>
               <h3 class="ppc-card-title">Structured sales pipeline</h3>
               <p class="ppc-card-text">
                 Quotes, orders, and invoices chain together in one system so nothing falls through the cracks
@@ -415,9 +286,6 @@
               <span class="ppc-tag ppc-tag--ok">Odoo Sales &amp; CRM</span>
             </article>
             <article class="ppc-card ppc-card--solution">
-              <div class="ppc-icon-solution">
-                <img src="/assets/Purchase_icon.png" alt="" width="44" height="44" />
-              </div>
               <h3 class="ppc-card-title">Automated reordering</h3>
               <p class="ppc-card-text">
                 Set reorder rules and let Odoo raise purchase proposals when stock hits your thresholds instead
@@ -426,16 +294,17 @@
               <span class="ppc-tag ppc-tag--ok">Odoo Purchase</span>
             </article>
             <article class="ppc-card ppc-card--solution">
-              <div class="ppc-icon-solution">
-                <img src="/assets/Manufacturing_icon.png" alt="" width="44" height="44" />
-              </div>
               <h3 class="ppc-card-title">Enterprise ERP, SMB price</h3>
               <p class="ppc-card-text">
                 Full Odoo implementation with fixed scope and partner-led delivery &mdash; a fraction of
                 traditional enterprise ERP quotes.
               </p>
-              <span class="ppc-tag ppc-tag--ok">Certified Reseller Pricing</span>
+              <span class="ppc-tag ppc-tag--ok">Partner-led pricing</span>
             </article>
+          </div>
+
+          <div class="section-inline-cta section-inline-cta--after-solution">
+            <button type="button" class="btn-odoo-cta open-contact-modal">Find out more!</button>
           </div>
         </div>
       </section>
@@ -448,14 +317,6 @@
           </p>
           <div class="services-trio-grid">
             <article class="services-trio-card card">
-              <div class="services-trio-icon" aria-hidden="true">
-                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.4">
-                  <circle cx="10" cy="8" r="3" />
-                  <path d="M4 20v-1a5 5 0 0 1 5-5h2a5 5 0 0 1 4 2" />
-                  <circle cx="17" cy="17" r="3" />
-                  <path d="M21 21l-2-2" />
-                </svg>
-              </div>
               <h3 class="services-trio-card-title">Odoo Consulting Services</h3>
               <p class="services-trio-card-text">
                 Unlock the complete potential of your business with our Odoo consulting services. We manage
@@ -465,13 +326,6 @@
               </p>
             </article>
             <article class="services-trio-card card">
-              <div class="services-trio-icon" aria-hidden="true">
-                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 2v1M12 21v1M4.2 4.2l.7.7M19.1 19.1l.7.7M2 12h1M21 12h1M4.2 19.8l.7-.7M19.1 4.9l.7-.7" />
-                  <path d="M12 6a4 4 0 0 0-2.8 6.9c.5.5.8 1.1.8 1.7V16h4v-1.4c0-.6.3-1.2.8-1.7A4 4 0 0 0 12 6z" />
-                  <path d="M9 18h6M10 22h4" />
-                </svg>
-              </div>
               <h3 class="services-trio-card-title">Odoo Implementation Services</h3>
               <p class="services-trio-card-text">
                 Streamline your everyday operations with our end-to-end Odoo ERP implementation. Our proven
@@ -480,11 +334,6 @@
               </p>
             </article>
             <article class="services-trio-card card">
-              <div class="services-trio-icon" aria-hidden="true">
-                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.4">
-                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
-                </svg>
-              </div>
               <h3 class="services-trio-card-title">Odoo Integration Services</h3>
               <p class="services-trio-card-text">
                 Don&rsquo;t let your operations fall down the crack, streamline working parts of your operations
@@ -540,7 +389,7 @@
               </div>
               <h3 class="why-dls-card-title">Odoo partner</h3>
               <p class="why-dls-card-text">
-                Certified, trained and recognised directly by Odoo
+                Trained and recognised directly by Odoo
               </p>
             </article>
           </div>
@@ -650,18 +499,6 @@
             <button type="button" class="btn-final-cta open-contact-modal">Contact Us</button>
           </div>
 
-          <div class="footer-brand">
-            <a href="/" class="footer-logo-link">
-              <img
-                class="footer-logo"
-                src="/assets/datalab-logo.svg"
-                alt="DataLabX Systems FZCO"
-                width="200"
-                height="40"
-              />
-            </a>
-          </div>
-
           <div class="contact-icon-bar" aria-label="Contact links">
             <a
               class="contact-icon-link"
@@ -744,52 +581,89 @@
           </div>
           <form id="modalLeadForm" class="modal-form" novalidate>
             <div class="modal-name-row">
-              <div class="modal-field-grow">
-                <label for="modalFirstName">First Name</label>
-                <input id="modalFirstName" name="first_name" type="text" required autocomplete="given-name" />
+              <div class="modal-field-grow lead-field">
+                <label for="modalFirstName" class="visually-hidden">First name</label>
+                <input
+                  id="modalFirstName"
+                  name="first_name"
+                  type="text"
+                  required
+                  autocomplete="given-name"
+                  placeholder="First name"
+                />
               </div>
-              <div class="modal-field-grow">
-                <label for="modalLastName">Last Name</label>
-                <input id="modalLastName" name="last_name" type="text" required autocomplete="family-name" />
+              <div class="modal-field-grow lead-field">
+                <label for="modalLastName" class="visually-hidden">Last name</label>
+                <input
+                  id="modalLastName"
+                  name="last_name"
+                  type="text"
+                  required
+                  autocomplete="family-name"
+                  placeholder="Last name"
+                />
               </div>
             </div>
 
-            <label for="modalEmail">Email Address</label>
-            <input id="modalEmail" name="email" type="email" required autocomplete="email" />
-
-            <label for="modalPhone">Phone Number</label>
-            <div class="phone-input-wrap">
+            <div class="lead-field">
+              <label for="modalEmail" class="visually-hidden">Email address</label>
               <input
-                id="modalPhone"
-                name="phone"
-                type="tel"
+                id="modalEmail"
+                name="email"
+                type="email"
                 required
-                autocomplete="tel"
-                placeholder="50 123 4567"
+                autocomplete="email"
+                placeholder="Email address"
               />
             </div>
 
-            <label for="modalCompany">Company Name</label>
-            <input id="modalCompany" name="company" type="text" autocomplete="organization" />
+            <div class="lead-field">
+              <label for="modalPhone" class="visually-hidden">Phone number</label>
+              <div class="phone-input-wrap">
+                <input
+                  id="modalPhone"
+                  name="phone"
+                  type="tel"
+                  required
+                  autocomplete="tel"
+                  placeholder="e.g. 50 123 4567"
+                />
+              </div>
+            </div>
 
-            <label for="modalServices">Select the Services</label>
-            <select id="modalServices" name="services">
-              <option value="">-- Select the Services --</option>
-              <option value="Implementation">Implementation</option>
-              <option value="Customization">Customization</option>
-              <option value="Migration">Migration</option>
-              <option value="Support">Support</option>
-              <option value="Training">Training</option>
-              <option value="Other">Other</option>
-            </select>
+            <div class="lead-field">
+              <label for="modalCompany" class="visually-hidden">Company name</label>
+              <input
+                id="modalCompany"
+                name="company"
+                type="text"
+                autocomplete="organization"
+                placeholder="Company name"
+              />
+            </div>
 
-            <label for="modalMessage">Tell us about your Projects</label>
-            <textarea
-              id="modalMessage"
-              name="project"
-              rows="4"
-              placeholder="Tell Us about your Projects..."
-            ></textarea>
+            <div class="lead-field">
+              <label for="modalServices" class="visually-hidden">Select the services</label>
+              <select id="modalServices" name="services" class="modal-services-select">
+                <option value="">Select the services</option>
+                <option value="Implementation">Implementation</option>
+                <option value="Customization">Customization</option>
+                <option value="Migration">Migration</option>
+                <option value="Support">Support</option>
+                <option value="Training">Training</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="lead-field">
+              <label for="modalMessage" class="visually-hidden">Tell us about your project</label>
+              <textarea
+                id="modalMessage"
+                name="project"
+                rows="4"
+                placeholder="Tell us about your project…"
+              ></textarea>
+            </div>
 
             <button type="submit" class="btn-connect modal-submit-btn">Submit</button>
             <p class="form-msg" id="modalFormMessage" aria-live="polite"></p>
