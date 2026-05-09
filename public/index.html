@@ -26,6 +26,16 @@
     <main>
       <section class="hero section">
         <div class="container hero-grid">
+          <a class="hero-logo-link" href="/" aria-label="DataLabX Systems home">
+            <img
+              class="hero-logo"
+              src="/DLS_Logo_Color_White.png"
+              alt="DataLab Systems"
+              width="1024"
+              height="169"
+            />
+          </a>
+
           <div class="hero-lead">
             <h1>Your Business.<br />Live on Odoo. In 4 Weeks.</h1>
           </div>
@@ -35,14 +45,14 @@
             <p class="lead-form-intro">Fill out the form, and leave the rest to our dedicated experts.</p>
 
             <div class="lead-field">
-              <label for="name" class="visually-hidden">First Name</label>
+              <label for="name" class="visually-hidden">Name</label>
               <input
                 id="name"
                 name="name"
                 type="text"
                 required
                 autocomplete="given-name"
-                placeholder="First name"
+                placeholder="Name"
               />
             </div>
 
@@ -112,8 +122,8 @@
         </div>
       </section>
 
-      <section class="section trust-platform">
-        <div class="container">
+      <section class="section proof-section">
+        <div class="container proof-stack">
           <header class="trust-platform-header">
             <h2 class="trust-platform-title">
               Delivering a platform <em>15 Million</em> businesses already trust!
@@ -123,6 +133,7 @@
               support that goes beyond go live!
             </p>
           </header>
+
           <div class="trust-banner card">
             <div class="trust-banner-copy">
               <p class="trust-banner-kicker">#1</p>
@@ -131,175 +142,133 @@
               </p>
             </div>
             <ul class="trust-banner-badges">
-              <li class="trust-badge">
-                <span>Big 4 Consulting Background</span>
-              </li>
-              <li class="trust-badge">
-                <span>Go-live in weeks, not months</span>
-              </li>
-              <li class="trust-badge">
-                <span>Odoo Partner</span>
-              </li>
+              <li class="trust-badge"><span>Big 4 Consulting Background</span></li>
+              <li class="trust-badge"><span>Go-live in weeks, not months</span></li>
+              <li class="trust-badge"><span>Odoo Partner</span></li>
             </ul>
           </div>
-        </div>
-      </section>
 
-      <section class="section odoo-cta-section">
-        <div class="container">
-          <button type="button" class="btn-odoo-cta open-contact-modal">
-            Find out how Odoo works for you!
-          </button>
-        </div>
-      </section>
-
-      <section class="section testimonial-section">
-        <div class="container">
           <figure class="testimonial-card card">
-            <span class="testimonial-quote-mark" aria-hidden="true">&ldquo;</span>
-            <img
-              class="testimonial-avatar"
-              src="/assets/2.%20Testinomial_Client%20Head%20shot.png"
-              alt=""
-              width="72"
-              height="72"
-            />
-            <blockquote class="testimonial-quote">
-              Live in weeks. Clean Inventory. VAT compliant books. Peace of mind.
-            </blockquote>
-            <div class="testimonial-person">
-              <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
-              <p class="testimonial-name">Mehmood Saleh</p>
-              <p class="testimonial-role">COO Target Chemicals</p>
+            <div class="testimonial-copy">
+              <span class="testimonial-quote-mark" aria-hidden="true">&ldquo;</span>
+              <blockquote class="testimonial-quote">
+                The processing time for accounting documents has been noticeably reduced, in certain cases
+                even from 2 days to only 5 hours. As a result we can now focus on what matters: reporting and
+                advising the client.
+              </blockquote>
             </div>
-            <div class="testimonial-logo-wrap">
+            <div class="testimonial-client">
               <img
-                class="testimonial-logo"
-                src="/assets/2.%20Testinomial_Client%20Logo.png"
-                alt="Target Chemicals"
-                width="140"
-                height="48"
+                class="testimonial-avatar"
+                src="/assets/2.%20Testinomial_Client%20Head%20shot.png"
+                alt="Mehmood Saleh"
+                width="144"
+                height="144"
               />
+              <div class="testimonial-client-meta">
+                <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <div class="testimonial-person">
+                  <p class="testimonial-name">Mehmood Saleh</p>
+                  <p class="testimonial-role">COO Target Chemicals</p>
+                </div>
+                <img
+                  class="testimonial-logo"
+                  src="/assets/2.%20Testinomial_Client%20Logo.png"
+                  alt="Target Chemicals"
+                  width="160"
+                  height="56"
+                />
+              </div>
             </div>
           </figure>
+
+          <div class="section-inline-cta proof-cta">
+            <button type="button" class="btn-odoo-cta open-contact-modal">
+              Find out how Odoo works for you!
+            </button>
+          </div>
         </div>
       </section>
 
       <section class="section pain-journey-section">
-        <div class="container">
-          <h2 class="empathy-section-title">Running a business shouldn&rsquo;t feel like this.</h2>
-          <div class="empathy-block card-soft">
-            <div class="empathy-tags" role="list">
-              <span role="listitem">Overwhelmed by spreadsheets</span>
-              <span role="listitem">Chasing numbers manually</span>
-              <span role="listitem">Blind to what&rsquo;s profitable</span>
-              <span role="listitem">Always firefighting</span>
-              <span role="listitem">Paying for chaos</span>
-              <span role="listitem">Tools that don&rsquo;t talk to each other</span>
+        <div class="container pain-journey-shell">
+          <div class="founder-note">
+            <img
+              class="founder-avatar-wrap"
+              src="/3.%20My%20headshot.png"
+              alt="M Haider bin Amir"
+              width="1024"
+              height="1024"
+            />
+            <div class="founder-mobile-meta">
+              <p>M Haider bin Amir</p>
+              <span>Founder &middot; note from me</span>
+            </div>
+            <div class="founder-copy">
+              <p class="founder-kicker">M Haider bin Amir &middot; Founder</p>
+              <h2 class="empathy-section-title">Running a business shouldn&rsquo;t feel like this.</h2>
+              <p class="founder-note-text">
+                I&rsquo;ve sat with dozens of founders in the UAE chasing numbers across WhatsApp threads,
+                stale spreadsheets and three different tools. Books a week behind. Stock counts that
+                don&rsquo;t match. Decisions made on gut feel.
+              </p>
+              <p class="founder-note-text">
+                You shouldn&rsquo;t have to run your business like this. So we built a fixed-scope Odoo rollout
+                that gets you live in 4 weeks with the chaos cleaned up.
+              </p>
+              <p class="founder-signature">&mdash; M Haider bin Amir, Founder</p>
             </div>
           </div>
 
-          <h2 class="problem-serif-title">One business, many problems?</h2>
-          <div class="ppc-grid">
-            <article class="ppc-card">
-              <h3 class="ppc-card-title">Accounting is behind</h3>
-              <p class="ppc-card-text">
-                Your team re-enters sales and expenses from WhatsApp screenshots and PDFs into spreadsheets
-                &mdash; then again into accounting. Books are never current when you need a decision.
-              </p>
-              <span class="ppc-tag ppc-tag--warn">Manual rework</span>
-            </article>
-            <article class="ppc-card">
-              <h3 class="ppc-card-title">Stock discrepancies</h3>
-              <p class="ppc-card-text">
-                The warehouse count says one number, the system says another, and finance is caught in the
-                middle. Fulfilment slows down and nobody trusts the report.
-              </p>
-              <span class="ppc-tag ppc-tag--warn">Inventory chaos</span>
-            </article>
-            <article class="ppc-card">
-              <h3 class="ppc-card-title">No profit visibility</h3>
-              <p class="ppc-card-text">
-                You can see revenue, but not which products, customers, or channels actually make money after
-                costs. Pricing and promotions are guesswork.
-              </p>
-              <span class="ppc-tag ppc-tag--warn">Blind margins</span>
-            </article>
-            <article class="ppc-card">
-              <h3 class="ppc-card-title">Sales on WhatsApp</h3>
-              <p class="ppc-card-text">
-                Orders land as voice notes and chat threads. Nothing ties cleanly to inventory or invoicing,
-                and there is no audit trail when something goes wrong.
-              </p>
-              <span class="ppc-tag ppc-tag--warn">Zero traceability</span>
-            </article>
-            <article class="ppc-card">
-              <h3 class="ppc-card-title">POs are guesswork</h3>
-              <p class="ppc-card-text">
-                You run out of bestsellers at the worst times and over-order slow movers because planning lives
-                in someone&rsquo;s head instead of the system.
-              </p>
-              <span class="ppc-tag ppc-tag--warn">Lost revenue</span>
-            </article>
-            <article class="ppc-card">
-              <h3 class="ppc-card-title">ERP quotes are insane</h3>
-              <p class="ppc-card-text">
-                Traditional vendors quote hundreds of thousands of dirhams and multi-year timelines. You need
-                control now, not a five-year programme.
-              </p>
-              <span class="ppc-tag ppc-tag--warn">Inaccessible pricing</span>
-            </article>
+          <div class="pain-relief-header">
+            <p>This is your week today</p>
+            <p>This is your week on Odoo</p>
           </div>
 
-          <h2 class="solution-heading">One platform, everything connected.</h2>
-          <div class="ppc-grid">
-            <article class="ppc-card ppc-card--solution">
-              <h3 class="ppc-card-title">Real-time accounting</h3>
-              <p class="ppc-card-text">
-                Every sale, purchase, and payment auto-posts to your ledger. Your books stay current without
-                manual re-keying between systems.
-              </p>
-              <span class="ppc-tag ppc-tag--ok">Odoo Accounting</span>
+          <div class="pain-relief-list">
+            <article class="pain-relief-row">
+              <div class="journey-card journey-card--problem">
+                <h3>Accounting is behind</h3>
+                <p>Sales, expenses and PDFs are re-entered into spreadsheets, then again into accounting.</p>
+              </div>
+              <span class="journey-arrow" aria-hidden="true">Fix</span>
+              <div class="journey-card journey-card--solution">
+                <h3>Real-time accounting</h3>
+                <p>Every sale, purchase and payment auto-posts so your books stay current.</p>
+              </div>
             </article>
-            <article class="ppc-card ppc-card--solution">
-              <h3 class="ppc-card-title">Live stock accuracy</h3>
-              <p class="ppc-card-text">
-                Barcode scanning, transfers, and adjustments flow straight into inventory so warehouse and
-                finance always see the same numbers.
-              </p>
-              <span class="ppc-tag ppc-tag--ok">Odoo Inventory</span>
+            <article class="pain-relief-row">
+              <div class="journey-card journey-card--problem">
+                <h3>Stock discrepancies</h3>
+                <p>Warehouse counts and finance reports disagree, slowing fulfilment and decisions.</p>
+              </div>
+              <span class="journey-arrow" aria-hidden="true">Fix</span>
+              <div class="journey-card journey-card--solution">
+                <h3>Live stock accuracy</h3>
+                <p>Barcode scans, transfers and adjustments flow into one shared inventory truth.</p>
+              </div>
             </article>
-            <article class="ppc-card ppc-card--solution">
-              <h3 class="ppc-card-title">Profit clarity, every deal</h3>
-              <p class="ppc-card-text">
-                Margins by product, customer, and channel land in one reporting layer so leadership can steer
-                with facts, not gut feel.
-              </p>
-              <span class="ppc-tag ppc-tag--ok">Odoo Reporting</span>
+            <article class="pain-relief-row">
+              <div class="journey-card journey-card--problem">
+                <h3>No profit visibility</h3>
+                <p>Revenue is visible, but margins by product, customer and channel are guesswork.</p>
+              </div>
+              <span class="journey-arrow" aria-hidden="true">Fix</span>
+              <div class="journey-card journey-card--solution">
+                <h3>Profit clarity</h3>
+                <p>Margin reporting lands in one layer so leadership can steer with facts.</p>
+              </div>
             </article>
-            <article class="ppc-card ppc-card--solution">
-              <h3 class="ppc-card-title">Structured sales pipeline</h3>
-              <p class="ppc-card-text">
-                Quotes, orders, and invoices chain together in one system so nothing falls through the cracks
-                between CRM and finance.
-              </p>
-              <span class="ppc-tag ppc-tag--ok">Odoo Sales &amp; CRM</span>
-            </article>
-            <article class="ppc-card ppc-card--solution">
-              <h3 class="ppc-card-title">Automated reordering</h3>
-              <p class="ppc-card-text">
-                Set reorder rules and let Odoo raise purchase proposals when stock hits your thresholds instead
-                of chasing buyers with spreadsheets.
-              </p>
-              <span class="ppc-tag ppc-tag--ok">Odoo Purchase</span>
-            </article>
-            <article class="ppc-card ppc-card--solution">
-              <h3 class="ppc-card-title">Enterprise ERP, SMB price</h3>
-              <p class="ppc-card-text">
-                Full Odoo implementation with fixed scope and partner-led delivery &mdash; a fraction of
-                traditional enterprise ERP quotes.
-              </p>
-              <span class="ppc-tag ppc-tag--ok">Partner-led pricing</span>
+            <article class="pain-relief-row">
+              <div class="journey-card journey-card--problem">
+                <h3>Sales on WhatsApp</h3>
+                <p>Orders arrive as voice notes and chat threads with no clean audit trail.</p>
+              </div>
+              <span class="journey-arrow" aria-hidden="true">Fix</span>
+              <div class="journey-card journey-card--solution">
+                <h3>Structured sales pipeline</h3>
+                <p>Quotes, orders and invoices connect cleanly from CRM to finance.</p>
+              </div>
             </article>
           </div>
 
@@ -310,86 +279,88 @@
       </section>
 
       <section class="section services-trio-section">
-        <div class="container">
-          <h2 class="services-trio-h2">Live in weeks, not months</h2>
-          <p class="services-trio-sub">
-            A proven process honed from Big 4 ERP delivery &mdash; minus the Big 4 price tag!
-          </p>
-          <div class="services-trio-grid">
-            <article class="services-trio-card card">
-              <h3 class="services-trio-card-title">Odoo Consulting Services</h3>
-              <p class="services-trio-card-text">
-                Unlock the complete potential of your business with our Odoo consulting services. We manage
-                every aspect of consulting for your operations, from Odoo functional consulting to Odoo
-                technical consulting. We ensure your ERP runs the way you need, when you need it. Tap into the
-                future of your operations today!
-              </p>
-            </article>
-            <article class="services-trio-card card">
-              <h3 class="services-trio-card-title">Odoo Implementation Services</h3>
-              <p class="services-trio-card-text">
-                Streamline your everyday operations with our end-to-end Odoo ERP implementation. Our proven
-                Odoo implementation methodology is designed around businesses across industries. Our tailored
-                Odoo ERP implementation services help you go live faster confidently and cost-effectively.
-              </p>
-            </article>
-            <article class="services-trio-card card">
-              <h3 class="services-trio-card-title">Odoo Integration Services</h3>
-              <p class="services-trio-card-text">
-                Don&rsquo;t let your operations fall down the crack, streamline working parts of your operations
-                with our Odoo Integration services. Collaborate with experts who can help you streamline
-                everything from payment gateways and CRMs to logistics, eCommerce, and marketing platforms.
-              </p>
-            </article>
+        <div class="container services-connected">
+          <div class="services-feature-panel">
+            <h2>Live in weeks,<br />not months.</h2>
+            <p>
+              A proven process honed from Big 4 ERP delivery &mdash; minus the Big 4 price tag. Fixed scope,
+              fixed price, four weeks to go-live.
+            </p>
+            <button type="button" class="btn-service-cta open-contact-modal">Contact Us</button>
           </div>
-          <div class="section-inline-cta">
-            <button type="button" class="btn-odoo-cta open-contact-modal">Find out more!</button>
+          <div class="services-column-grid">
+            <article class="service-column">
+              <svg class="service-icon-placeholder" aria-hidden="true">
+                <use href="/assets/section-icons.svg#icon-consulting"></use>
+              </svg>
+              <p class="service-number">01.</p>
+              <h3>Odoo Consulting Services</h3>
+              <p>
+                Unlock the complete potential of your business with functional and technical Odoo consulting
+                shaped around how your team actually works.
+              </p>
+            </article>
+            <article class="service-column">
+              <svg class="service-icon-placeholder" aria-hidden="true">
+                <use href="/assets/section-icons.svg#icon-implementation"></use>
+              </svg>
+              <p class="service-number">02.</p>
+              <h3>Odoo Implementation Services</h3>
+              <p>
+                Streamline everyday operations with end-to-end Odoo ERP implementation, a proven methodology
+                and a fixed delivery path.
+              </p>
+            </article>
+            <article class="service-column">
+              <svg class="service-icon-placeholder" aria-hidden="true">
+                <use href="/assets/section-icons.svg#icon-integration"></use>
+              </svg>
+              <p class="service-number">03.</p>
+              <h3>Odoo Integration Services</h3>
+              <p>
+                Connect payment gateways, CRMs, logistics, eCommerce and marketing platforms so your operating
+                data moves without manual handoffs.
+              </p>
+            </article>
           </div>
         </div>
       </section>
 
       <section class="section why-dls-section">
         <div class="container">
-          <h2 class="why-dls-h1">Why DataLab Systems as Odoo Implementation Partner?</h2>
-          <p class="why-dls-tagline">Not just another Odoo partner!</p>
+          <header class="why-dls-header">
+            <p class="why-dls-tagline">Not just another Odoo partner!</p>
+            <h2 class="why-dls-h1">Why DataLab Systems as Odoo Implementation Partner?</h2>
+          </header>
           <div class="why-dls-grid">
-            <article class="why-dls-card card">
-              <div class="why-dls-icon" aria-hidden="true">
-                <span class="why-dls-icon-num">1</span>
-              </div>
+            <article class="why-dls-card">
+              <svg class="why-dls-icon" aria-hidden="true">
+                <use href="/assets/section-icons.svg#icon-delivery"></use>
+              </svg>
               <h3 class="why-dls-card-title">Big 4 Delivery. <span class="why-dls-sub">SMB pricing.</span></h3>
               <p class="why-dls-card-text">
                 Led by an ex-PwC Oracle Fusion consultant with MENA enterprise experience &mdash; structured
                 implementations, not freelance guesswork.
               </p>
             </article>
-            <article class="why-dls-card card">
-              <div class="why-dls-icon" aria-hidden="true">
-                <span class="why-dls-icon-num">2</span>
-              </div>
+            <article class="why-dls-card">
+              <svg class="why-dls-icon" aria-hidden="true">
+                <use href="/assets/section-icons.svg#icon-fixed-scope"></use>
+              </svg>
               <h3 class="why-dls-card-title">Live in weeks. <span class="why-dls-sub">Fixed price.</span></h3>
               <p class="why-dls-card-text">
                 Everything scoped in a signed SOW before day one. No billable hours, no scope creep, no surprise
                 invoices midway through.
               </p>
             </article>
-            <article class="why-dls-card card">
-              <div class="why-dls-icon" aria-hidden="true">
-                <span class="why-dls-icon-num">3</span>
-              </div>
+            <article class="why-dls-card">
+              <svg class="why-dls-icon" aria-hidden="true">
+                <use href="/assets/section-icons.svg#icon-uae"></use>
+              </svg>
               <h3 class="why-dls-card-title">UAE based. <span class="why-dls-sub">Not offshore.</span></h3>
               <p class="why-dls-card-text">
                 Based in Dubai Silicon Oasis. Same timezone, Arabic-capable, available for on-site visits. No
                 6am calls with a developer in another continent.
-              </p>
-            </article>
-            <article class="why-dls-card card">
-              <div class="why-dls-icon" aria-hidden="true">
-                <span class="why-dls-icon-num">4</span>
-              </div>
-              <h3 class="why-dls-card-title">Odoo partner</h3>
-              <p class="why-dls-card-text">
-                Trained and recognised directly by Odoo
               </p>
             </article>
           </div>
@@ -467,13 +438,14 @@
             </div>
             <div class="faq-item faq-item--placeholder">
               <button type="button" class="faq-trigger" aria-expanded="false">
-                <span>Your next question (coming soon)</span>
+                <span>How quickly can we start?</span>
                 <span class="faq-chevron" aria-hidden="true"></span>
               </button>
               <div class="faq-panel" hidden>
                 <p>
-                  We&rsquo;re adding more answers here. Ask us anything on the discovery call &mdash; or use the
-                  contact form and we&rsquo;ll reply within 24 hours.
+                  Most projects start with a discovery call, a short process review, and a fixed-scope proposal.
+                  Once the scope is signed, we can usually begin within a week and keep the rollout focused on
+                  the four-week go-live plan.
                 </p>
               </div>
             </div>
